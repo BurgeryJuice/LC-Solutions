@@ -1,7 +1,7 @@
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
         points.sort()
-        print(points)
+        
         i = 0
         lb = points[0][0]
         up = points[0][1]
