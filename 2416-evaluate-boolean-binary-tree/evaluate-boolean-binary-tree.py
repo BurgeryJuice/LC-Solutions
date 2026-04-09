@@ -11,9 +11,7 @@ class Solution:
                 return True
             elif n.val == 0:
                 return False
-            else:
-                if n.val == 2:
-                    return t(n.left) or t(n.right)
-                if n.val == 3:
-                    return t(n.left) and t(n.right)
+            elif n.val == 2:
+                return t(n.left) or t(n.right)
+            return t(n.left) and t(n.right)
         return t(root)
