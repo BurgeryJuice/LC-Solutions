@@ -18,7 +18,7 @@ class Solution:
                 a[thing[0]].right = a[thing[1]]
                 continue
             a[thing[0]].left = a[thing[1]]
-        for thing in a.keys():
+        for thing in a:
             if thing not in b:
                 return a[thing]
         
